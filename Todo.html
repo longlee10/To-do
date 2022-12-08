@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo List</title>
+    <link rel="stylesheet" href="Todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="header" id="header">
+        <div id="taskname">My Todo List</div>
+        <div id="progressname">Task In Progress</div>
+        <div id="completedname">Task Completed</div>
+      </div>
+      <div class="component" id="component">
+        <div id="task">
+          <table>
+            <tr>
+              <td>
+                <div id="addtask">
+                  <input type="text" id="mytask" />
+                  <button id="button"><i class="fa fa-plus"></i></button>
+                </div>
+              </td>
+              <td class="space2"></td>
+              <td>
+                <select id="searchtask">
+                  <option value="selectall">All Task</option>
+                  <option value="selectuncompleted">Task In Progress</option>
+                  <option value="selectcomplete">Task Completed</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+
+          <div class="space1"></div>
+          <div id="moretask"></div>
+        </div>
+
+        <div id="progress"></div>
+        <div id="completed"></div>
+      </div>
+    </div>
+    <script src="Todo.js"></script>
+  </body>
+</html>
